@@ -1,0 +1,36 @@
+Question:
+Imagine you are creating a new blockchain system.
+1. What behaviour/aspects of the system to you want to encourage? 
+Behaviours: honest and efficient mining, keeping nodes online and secure, gossiping and communication within the network
+Aspects: asymmetric encryption, public/private key crypto & digital signatures etc, smart contracts and pro
+
+2. What behaviour/aspects of the system to you want to discourage? 
+Behaviours: the opposite of above! Want to have as little opportunity for attacks such as 51%, DoS, as possible
+
+3. What means do you have for your incentivisation? 
+Each block mined has a reward attached to it, in the currency of the network
+I wouldn't use a PoW system as it encourages monopolisation and grouping of computing resources and ultimate control
+I would try a DPoS system in which its democratic, and encourages a behaviour of honest and efficient mining. Im not convinced that the amount you own should determine the amount of votes you have but i'm not sure how else you could do it
+
+************************************************************
+Features of the ETH blockchain:
+
+Decentralised -  Its all based on a big network of node computers that communicate on a gossip protocol, i.e. spread information as much as possible to as many nodes as you can?!
+
+Security - Addresses are all of the giant untraceable hash things generated from a private key and public key. 
+
+The block structure where the block header of the current block contains a hash of all of the information from the previous block is a great thing, no matter how minor the modification to anything that came before, the hash will be completely different so that these changes propagate which means its super easy to see if something has changed. Then the whole gossip thing, and the fact that everyone has to reach a consensus on the correctness of blocks is brilliant innovation. 
+
+The main, and only(?) vulnerability I can see is the whole 51% attack thing. I didn't realise that in the past that this had actually occurred - if the network is very vast then this of course becomes and unfathomably large task, but on a smaller or emergent blockchains this i imagine, is quite easy as Laurent highlighted in the lectures. 
+Also, even with bitcoin, he showed a conference photo where about 8 blokes represented 90% of the network, and the fact that a lot of mining is done via pools or groups of some kind which pools computational resources. That basically means that Joe Bloggs on the network cant realistically stand a chance at mining against the pools, AND then that makes the 51% thing much more attainable to them. This is the whole reason that in business they have rules on monopolising etc. There is the ability to blacklist addresses but it is so easy to create a new one that this is only a temporary fix. 
+In a proof of stake system, the miners are constantly incentivised to improve their mining machines in order to keep up with the network or face falling behind and getting no block rewards, 
+In proof of stake, the richest users get control - i.e. if you own 3% of the coins, you can only mine 3% of the blocks - the mining power of a miner is given in proportion to how much they own - thereby this reduces the need for the epic amounts of energy that are needed to mine in a PoW system. The PoS system can avoid the 51% attack as if one person did own 51% of the network and have 51% of the mining power, it would be disadvantageous for them to attack the network. So the theory goes, that they don't. It doesn't stop pooling - whereby a bunch of individuals can get together and then individually none of them have a majority stake and then are not decentivised? 
+If the value of the current fell that would see a decrease in their own monetary value, and so any majority stake owner would be more inclined to keep a very secure network.
+Delegated proof of Stake - here the mining is done by a third party who is voted for by nodes on the network, and the number of votes that you have is determined by how much currency you own. Therefore, the people doing the mining are incentivised to work honestly and efficiently as they will gain reputation, votes and therefore get the ability to mine further blocks and get rewards. This is a bit more of a democratic way of doing things in that people are voted in but i'm not sure why people don't vote for themselves? Maybe owners do? I also read that owners each get a turn at block production, which I guess answers that. 
+
+Denial of Service - i'm not sure if this is such a big problem as we are dealing with a decentralised network of computers, if there are any centralised things then yes - can the exchanges being attacked be a problem, its not like the network ceases to exist and there are many exchanges? 
+
+
+
+
+
