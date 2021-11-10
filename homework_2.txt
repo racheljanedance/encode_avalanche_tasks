@@ -2,7 +2,7 @@ Homework 2:
 What do these transactions do?
 1. 0xb9316bbbae1cd21cd824de8651c72582261230724b1957abdeb466aa96a359c9
 Transaction date/time: Jun-21-2016 07:49:13 PM at Block number: 1746429 
-..... This is the DAO attack?????
+..... This is the DAO attack????? yes!
 
 What is it? : A contract that caused repetition of 2 transfers... although I cant tell exactly how it was done, it has the following.... 
 Repeated 31 times... 
@@ -18,6 +18,8 @@ Block Number: 10207858
 
 The transaction fee here is 0.1ETH? This seems enormous (500 bucks at the time)... it looks like a contract deployment - it has no 'value' 
 The contract itself is a uniswap, so is this people buying or selling tokens of some denomination - its swapping ETH for tokens so I assume its buying tokens, perhaps this was an IPO? Its most recent transactions are seconds ago!
+
+Laurence: this was the uniswap deployment
 
 3. 0x552bc0322d78c5648c5efa21d2daa2d0f14901ad4b15531f1ab5bbe5674de34f 
 Date/Time: Aug-10-2021 04:05:47 PM 
