@@ -1,0 +1,61 @@
+Homework 2:
+What do these transactions do?
+1. 0xb9316bbbae1cd21cd824de8651c72582261230724b1957abdeb466aa96a359c9
+Transaction date/time: Jun-21-2016 07:49:13 PM at Block number: 1746429 
+..... This is the DAO attack?????
+
+What is it? : A contract that caused repetition of 2 transfers... although I cant tell exactly how it was done, it has the following.... 
+Repeated 31 times... 
+TRANSFER  429.880658058073402535 Ether From TheDAO Token To  0xf4c64518ea10f995918a454158c6b61407ea345c
+TRANSFER  0.000001497161439856 Ether From DaoManagedAcct To  0xe306aac52823ba1d3938608381a2444d9d641cc1
+... times 31! Thats 430*31 = 13,330ETH 
+And then, 31 times....
+Token transfers of $3,505,198.99 31 times too, which is $1.1bn!! From 0xe306aac52823ba1d3938608381a2444d9d641cc1 to Black Hole: 0x000…000! 
+
+2. 0x4fc1580e7f66c58b7c26881cce0aab9c3509afe6e507527f30566fbf8039bcd0 
+Date/Time: Jun-05-2020 08:17:21 PM
+Block Number: 10207858
+
+The transaction fee here is 0.1ETH? This seems enormous (500 bucks at the time)... it looks like a contract deployment - it has no 'value' 
+The contract itself is a uniswap, so is this people buying or selling tokens of some denomination - its swapping ETH for tokens so I assume its buying tokens, perhaps this was an IPO? Its most recent transactions are seconds ago!
+
+3. 0x552bc0322d78c5648c5efa21d2daa2d0f14901ad4b15531f1ab5bbe5674de34f 
+Date/Time: Aug-10-2021 04:05:47 PM 
+
+Im not sure what 'PolyNetwork Exploiter 1' is? ---- https://cointelegraph.com/news/poly-network-hacker-returns-258m-conducts-ama-on-how-it-went-down
+It looks like the Polygon network had some  serious security issues and this guy (who had a right ballsy AMA after) was going to give a lot of it back! You see the poly guys begging for it to be put back which just shows how hard it would be for them to get it back! 
+
+So, this is a hack. Fine. I don't know the details of what the security issue is though? Im not sure how to find out what the vulnerability is?
+
+4. 0x7a026bf79b36580bf7ef174711a3de823ff3c93c65304c3acc0323c77d62d0ed
+Date/Time: Aug-12-2021 02:52:12 PM
+
+This looks like the guy paying them back! 96,942,062.85 DAI Stablecoin, so i think its the same amount of dollars according to the etherscan? Wow. And the wasnt all of it either hahah!
+
+5. 0x814e6a21c8eb34b62a05c1d0b14ee932873c62ef3c8575dc49bcf12004714eda
+Date/Time: Aug-19-2021 02:31:31 AM
+This is a transfer of 160ETH (509,440USD) to the Hacker? Are they paying them cash to get them to return tokens? The gas is pretty low so i assume this is just a transfer and nothing more complex. Im not sure why anyone is paying a hacker, or are they employing them?! 
+
+
+What is the largest account balance you can find ?
+
+Add: 0x00000000219ab540356cbb839cbe05303d7705fa
+Name: Eth2 Deposit Contract	
+Bal: 8,215,410.000069 Ether	
+% total currency: 6.97524723%	
+# Transactions: 163,378 --- but this looks like some kind of contract that is used to sell it, so maybe this isnt a person... 
+
+The first one that doesnt have a name is: 	
+Add: 0x73bceb1cd57c711feac4224d062b0f6ff338501e
+Balance: 1,859,792.47052129 Ether	
+% total currency1.57904624%
+# transactions: 342 ---> suspect that this is some sort of investor maybe, but thats a LOT of ETH?! 
+
+The exchange sites like Binance, Kraken have huge balances, but these are companies with which you can have a wallet etc, so I guess this is just their working capital of everyones wallets? Also notice that there are a LOT of accounts that have exactly 150,000 ETH each, all with about 4/5 transactions, is this a coincidence? 
+
+What is special about these accounts :
+1. 0x1db3439a222c519ab44bb1144fc28167b4fa6ee6 - balance is 382ETH, it says Eth2 depositor
+People seem to think this is Vitalik Buterin, and are literally just begging for money... 'im so poor and desperate I cant feed my family' etc.... seriously?!
+
+2. 0x000000000000000000000000000000000000dEaD - this is the black hole address from the hack above isnt it?? transactions up to like 9 hours ago? balance 12,552 ETH, hundreds of transactions. There is a forum thread on it saying its an ETH burning account, but then others saying 'send in what you can afford' ... theyre funding something?
+
