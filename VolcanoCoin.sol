@@ -12,9 +12,9 @@ contract VolcanoCoin{
         // address user;
         uint balance;
     }
+    mapping(address => usersBalances) balances;
     address[] public userList;
-    mapping(address => uint) balance;
-    
+
     constructor() {
         //Set owner statically, once.
         owner = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4;
@@ -35,9 +35,9 @@ contract VolcanoCoin{
         }
     }
 
-    //Get user balance from balance mapping - must know address
+    //Get user balance from balances mapping
     function getUserBalance(address _address) public view returns(uint){
-        return balance[_address];
+        return balances[_address].balance;
     }
     
     //Get total supply
