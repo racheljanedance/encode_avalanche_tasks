@@ -1,0 +1,32 @@
+Homework 4:
+1a)In order to keep track of user balances, we need to associate a user’s address with the balance that they have.
+a) What is the best data structure to hold this association?
+Mapping: mapping(KeyType => ValueType) mapping_name;
+The addresses can be a key and the balances can be a uint - been doing some reading how mappings are fast but the keys are not iterable, so this would need to be combined with an array in order to *search* to see if an existing key is there, and then to have its value updated.
+
+b) Using your choice of data structure, set up a variable called balance to keep track of the number of volcano coins that a user has.
+(See VolcanoCoin contract)
+Mapping: mapping(address => uint) balances;
+
+2. We want to allow the balance variable to be read from the contract, there are 2 ways to do this.
+a) What are those ways?
+1st Way:use a getter that calls the mapping for an address and the balance is returned, you are required to know the address
+2nd Way: write all of the info to a struct? Then you can search it?
+
+b) Use one of the ways to make your balances variable visible to users of the contract.
+(See VolcanoCoin contract)
+
+3. Now change the constructor, to give all of the total supply to the owner of the contract.
+(See VolcanoCoin contract)
+
+4. Now add a public function called transfer to allow a user to transfer their tokens to another address.(See VolcanoCoin contract)
+This function should have 2 parameters :
+the amount to transfer and the recipient address.
+a) Why do we not need the sender’s address here ?
+b) What would be the implication of having the sender’s address as a parameter ?
+
+5. Add an event to the transfer function to indicate that a transfer has taken place, it should record the amount and the recipient address. (See VolcanoCoin contract)
+
+6. We want to keep a record for each user’s transfers. Create a struct called Payment that can be used to hold the transfer amount and the recipient’s address. (See VolcanoCoin contract)
+
+7. We want to reference a payments array to each user sending the payment. Create a mapping which returns an array of Payment structs when given this user’s address. (See VolcanoCoin contract)
