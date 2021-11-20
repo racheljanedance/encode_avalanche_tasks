@@ -1,0 +1,6 @@
+Homework 5
+
+1. Import the ERC20 standard. Done: import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+2. Inherit the ERC20 contract. Done: is ERC20, constructor() ERC20("TOKEN", "TKN")
+3. Deploy the contract.
+4. Press the drop down arrow under Deployed Contracts.

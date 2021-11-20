@@ -1,12 +1,15 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.0;
-contract VolcanoCoin{
-    
+
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+
+contract VolcanoCoin is ERC20{
+
     //set variables
     uint totalSupply = 10000;
     address owner;
     event totalSupplyInc(uint);
-    event Transfer(address indexed sender, address indexed receiver, uint256 amount);
+    // event Transfer(address indexed sender, address indexed receiver, uint256 amount);
     
     struct usersBalances { 
         address user;
@@ -17,8 +20,8 @@ contract VolcanoCoin{
     address[] public userList; //this has an automatic getter
 
     uint numUsers;
-
-    constructor() {
+    
+    constructor() ERC20("TOKEN", "TKN") {
         //Set owner statically, once.
         owner = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4; 
         // add the owner to the array, and set the owner balance = total supply
