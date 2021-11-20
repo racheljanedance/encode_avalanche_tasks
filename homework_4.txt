@@ -6,7 +6,7 @@ The addresses can be a key and the balances can be a uint - been doing some read
 
 b) Using your choice of data structure, set up a variable called balance to keep track of the number of volcano coins that a user has.
 (See VolcanoCoin contract)
-Mapping: mapping(address => uint) balances;
+Mapping: mapping(address => uint) balances; 
 
 2. We want to allow the balance variable to be read from the contract, there are 2 ways to do this.
 a) What are those ways?
@@ -14,7 +14,7 @@ a) What are those ways?
 2nd Way: write all of the info to a struct? Then you can search it?
 
 b) Use one of the ways to make your balances variable visible to users of the contract.
-(See VolcanoCoin contract)
+(See VolcanoCoin contract) 
 
 3. Now change the constructor, to give all of the total supply to the owner of the contract.
 (See VolcanoCoin contract)
@@ -23,7 +23,9 @@ b) Use one of the ways to make your balances variable visible to users of the co
 This function should have 2 parameters :
 the amount to transfer and the recipient address.
 a) Why do we not need the sender’s address here ?
-b) What would be the implication of having the sender’s address as a parameter ?
+Because the sender is msg.sender
+b) What would be the implication of having the sender’s address as a parameter?
+huge security risk if you could transfer tokens from any address to any address! You could take funds from anyone and donate them to yourself for a start, and even if you could someone else would do it to you!
 
 5. Add an event to the transfer function to indicate that a transfer has taken place, it should record the amount and the recipient address. (See VolcanoCoin contract)
 

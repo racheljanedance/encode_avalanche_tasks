@@ -7,23 +7,23 @@ contract VolcanoCoin{
     address owner;
     event totalSupplyInc(uint);
     event Transfer(address indexed sender, address indexed receiver, uint256 amount);
-
     
     struct usersBalances { 
         address user;
         uint balance;
     }
+    
     mapping(address => usersBalances) balances; //(Q1b)
-    address[] public userList;
+    address[] public userList; //this has an automatic getter
 
     uint numUsers;
 
     constructor() {
         //Set owner statically, once.
-        owner = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4;
+        owner = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4; 
         // add the owner to the array, and set the owner balance = total supply
-        userList.push(owner);
-        balances[msg.sender].balance = totalSupply;
+        userList.push(owner); 
+        balances[msg.sender].balance = totalSupply; 
         //initialise number of users to 0
         // numUsers = 0;
     }
@@ -45,8 +45,8 @@ contract VolcanoCoin{
     //require that the msg.sender isnt in the list of users already
 
     //Get user balance from balances mapping (Q2b)
-    function getUserBalance(address _address) public view returns(uint){
-        return balances[_address].balance;
+    function getUserBalance() public view returns(uint){
+        return balances[msg.sender].balance;
     }
      
     function newUser() public {
@@ -71,7 +71,8 @@ contract VolcanoCoin{
     // Increment total supply by 1000 tokens - owner only    
     function incTotalSupply() public onlyOwner {
         totalSupply = totalSupply + 1000;
-        emit totalSupplyInc(totalSupply);
+        //Should increment the balance of the owner with 1000 here?
+        emit totalSupplyInc(totalSupply); 
     }
     
     function transferTokens(address _recipient, uint256 _amount) public payable {
