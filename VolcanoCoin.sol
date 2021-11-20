@@ -14,7 +14,7 @@ contract VolcanoCoin is ERC20{
     struct usersBalances { 
         address user;
         uint balance;
-    }
+    } 
     
     mapping(address => usersBalances) balances; //(Q1b)
     address[] public userList; //this has an automatic getter
