@@ -12,6 +12,15 @@ contract volcanoToken is Ownable, ERC721("TOKEN", "TKN") {
     // Token symbol
     string private _symbol;
     
+    //Token indexed
+    uint256 tokenID; 
+    
+    struct tokenMetadata {
+        uint timestamp;
+        uint256 tokenID;
+        string tokenURI;
+    } 
+    
     // 
     constructor(string memory name_, string memory symbol_) {
         _name = name_; 
